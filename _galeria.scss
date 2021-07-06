@@ -1,0 +1,25 @@
+.cuerpoGaleria{
+	background-color: black;
+}
+.galeria{
+	@include title;
+	padding-top: 80px;	
+
+}
+
+.fotosImagen {
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border: solid;
+	padding: 15px;
+	margin: 2px;
+	img {
+		width: 300px;
+		&:hover {
+			transform: scale(1.3);
+		}
+	}
+}

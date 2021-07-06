@@ -1,0 +1,73 @@
+@import "_mixins";
+
+.cuerpo{	
+	background-image: url("media/fondo.jpg");
+	background-size: cover;
+	padding-top: 50px;
+	background-size: 1220px;
+	background-position-y: 127px;
+			
+}
+@media all and (max-width: 576px) {
+	.cuerpo{
+		background-image: none;
+	background-color: black;}
+}
+
+.variedades {
+	@include title;
+	padding-top: 80px;
+	
+}
+
+.varios {
+	@include title;
+	margin-top: 5px;
+}
+.chop{
+	@include title;
+	margin-top: 5px;
+}
+
+.imag {
+	img {
+		width: 300px;
+		padding: 10px;
+	}
+}
+.btn {
+	width: 100px;
+	font-size: 30px;
+	&:focus {
+		box-shadow: none !important;
+	}
+}
+.modal-header {
+	border-bottom: none !important;
+}
+.modal-footer {
+	border-top: none !important;
+}
+.btn.focus {
+	box-shadow: none !important;
+}
+.colorOranje{
+    color: $colorOranje;
+}
+.colorRed{
+    color: $colorRed;
+}
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: rgb(245, 233, 220);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
