@@ -76,8 +76,8 @@ body {
 
 .contHeader li {
   display: inline-block;
-  padding: 0 80px;
-  font-size: 16px;
+  padding: 0 40px;
+  font-size: 14px;
 }
 
 .contHeader li:hover {
@@ -531,5 +531,31 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: .3rem;
   outline: 0;
+}
+
+.titulo {
+  font-family: "Montserrat", sans-serif;
+  margin: 10px;
+  padding-top: 10px;
+  margin-top: 30px;
+  color: #D35400;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+.puntos {
+  color: #A93226;
+  padding-top: 20px;
+}
+
+.puntoVenta {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
