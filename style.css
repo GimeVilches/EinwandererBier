@@ -298,16 +298,10 @@ body {
   }
 }
 
-.datos {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: cont1;
-}
-
 .footer {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: foot;
   background-color: black;
   width: 100%;
@@ -330,7 +324,7 @@ body {
 }
 
 .iconos i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #e74c3c;
   margin-left: 50%;
 }
@@ -411,17 +405,14 @@ body {
   margin-bottom: 40px;
 }
 
-.cuerpoGaleria {
-  background-color: black;
-}
-
-.galeria {
+.galeriaTitulo {
   font-family: "Montserrat", sans-serif;
   margin: 10px;
   padding-top: 10px;
   margin-top: 30px;
   color: #D35400;
-  padding-top: 80px;
+  padding-top: 120px;
+  margin-left: 60px;
 }
 
 .fotosImagen {
@@ -435,16 +426,17 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border: solid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 15px;
   margin: 2px;
 }
 
 .fotosImagen img {
   width: 300px;
+  border: solid black;
+  margin: 10px;
+  padding: 3px;
 }
 
 .fotosImagen img:hover {
@@ -555,12 +547,12 @@ p {
 .puntoVenta {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "tit tit" "desc desc" "map1 map2" "map3 map4";
+      grid-template-areas: "tit tit" "desc desc" "map1 map2" "map3 map4" "foot foot";
 }
 
 @media all and (max-width: 576px) {
   .puntoVenta {
-        grid-template-areas: "tit tit" "desc desc" "map1 ." "map2 ."	 "map3 ." "map4 .";
+        grid-template-areas: "tit tit" "desc desc" "map1 ." "map2 ."	 "map3 ." "map4 ." "foot foot";
     margin: auto;
   }
 }
@@ -618,6 +610,15 @@ p {
   grid-area: map4;
 }
 
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: foot;
+  margin: 0;
+  padding: 0;
+}
+
 .evento {
   margin: 20px;
 }
@@ -642,5 +643,10 @@ p {
   border: solid black;
   -webkit-box-shadow: 7px 13px 37px #000;
           box-shadow: 7px 13px 37px #000;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */

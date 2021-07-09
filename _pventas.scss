@@ -7,6 +7,7 @@
     "desc desc"
     "map1 map2"
 	"map3 map4"
+    "foot foot"
     
      	
 }
@@ -18,7 +19,8 @@
         "map1 ."
         "map2 ."	
         "map3 ."
-        "map4 .";
+        "map4 ."
+        "foot foot";
         margin: auto;
 
         
@@ -63,4 +65,9 @@
     grid-area: map4;
    
     
+}
+.footer{
+    grid-area: foot;
+    margin: 0;
+    padding: 0;
 }

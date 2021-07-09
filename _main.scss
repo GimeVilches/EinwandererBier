@@ -242,10 +242,7 @@ grid-template-areas:
 		width: 250px;
 	}
 }
-.datos{
-	grid-area:cont1;
-	
-}
+
 .footer {
 	grid-area: foot;
 	background-color: black;
@@ -272,7 +269,7 @@ grid-template-areas:
 	}
 
 	.iconos i{
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		color: #e74c3c;
 		margin-left: 50%;
 		
