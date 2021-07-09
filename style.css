@@ -116,7 +116,7 @@ body {
 
 .banner .imgBanner {
   width: 100%;
-  min-height: 500px;
+  min-height: 620px;
   background-image: url("media/banner.jpg");
   background-position: center;
   background-size: cover;
