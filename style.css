@@ -229,8 +229,8 @@ body {
 .historia .foto {
   width: 200px;
   border: solid black;
-  margin-left: 180px;
-  margin-top: 10px;
+  margin-left: 200px;
+  margin-top: 15px;
   -webkit-box-shadow: 7px 13px 37px #000;
           box-shadow: 7px 13px 37px #000;
 }
