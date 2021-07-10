@@ -157,24 +157,48 @@ grid-template-areas:
 
 .historia {
 	grid-area: nos;
+	
 	.titulo {
 		@include title;}
+	.nosotros{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}	
 
 	.texto {
 		font-family:$fuente;	
 		letter-spacing: 1px;
 		text-align: justify;
-		margin: 13px;	
-}
+		margin: 13px;
+		width: 50%;
+		margin-bottom: 30px;
+	
+	}
+		
+		.foto{
+			width: 200px;
+			border: solid black;
+			margin-left: 180px;
+			margin-top: 10px;
+			box-shadow: 7px 13px 37px #000;
+
+		}	
+
 	.video {
 		margin: 13px;
 		text-align: center;
 		border-bottom: solid black;
+		margin-top: 100px;
+		
 	
 }
 }
 @media all and (max-width: 576px) {
 	.historia {
+		.foto{
+			margin-left: 50px;
+		}
 		.video {
 			iframe {
 				max-width: 300px;

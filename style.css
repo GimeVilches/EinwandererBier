@@ -205,20 +205,47 @@ body {
   color: #D35400;
 }
 
+.historia .nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .historia .texto {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   text-align: justify;
   margin: 13px;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.historia .foto {
+  width: 200px;
+  border: solid black;
+  margin-left: 180px;
+  margin-top: 10px;
+  -webkit-box-shadow: 7px 13px 37px #000;
+          box-shadow: 7px 13px 37px #000;
 }
 
 .historia .video {
   margin: 13px;
   text-align: center;
   border-bottom: solid black;
+  margin-top: 100px;
 }
 
 @media all and (max-width: 576px) {
+  .historia .foto {
+    margin-left: 50px;
+  }
   .historia .video iframe {
     max-width: 300px;
     margin: auto;
