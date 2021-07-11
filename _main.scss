@@ -11,7 +11,7 @@ body{
     "nav nav nav"
 	"ban ban ban"
     "nos nos nos"
-    "cont cont1 cont2"	
+    "cont cont2 cont1"	
     "foot foot foot";
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -159,11 +159,15 @@ grid-template-areas:
 	grid-area: nos;
 	
 	.titulo {
-		@include title;}
+		@include title;
+		margin-left: 30px;
+	
+	}
 	.nosotros{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
+		margin-left: 30px;
 	}	
 
 	.texto {
@@ -172,8 +176,17 @@ grid-template-areas:
 		text-align: justify;
 		margin: 13px;
 		width: 50%;
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 	
+	}
+	.textoUno{
+		font-family:$fuente;	
+		letter-spacing: 1px;
+		text-align: justify;
+		margin: 13px;
+		width: 50%;
+		margin-bottom: 50px;
+		margin-left: 200px;
 	}
 		
 		.foto{
@@ -182,7 +195,16 @@ grid-template-areas:
 			margin-left: 200px;
 			margin-top: 15px;
 			box-shadow: 7px 13px 37px #000;
+			margin-bottom: 50px;
 
+		}
+		.fotoUno{
+			width: 200px;
+			border: solid black;
+			margin-left: 20px;
+			margin-top: 15px;
+			box-shadow: 7px 13px 37px #000;
+			margin-bottom: 50px;
 		}	
 
 	.video {
@@ -196,7 +218,16 @@ grid-template-areas:
 }
 @media all and (max-width: 576px) {
 	.historia {
+		.texto{
+			margin: 13px;
+		}
+		.textoUno{
+			margin: 13px;
+		}
 		.foto{
+			margin-left: 50px;
+		}
+		.fotoUno{
 			margin-left: 50px;
 		}
 		.video {
@@ -209,8 +240,11 @@ grid-template-areas:
 }
 .formulario {
 	grid-area: cont;
+	width: 100%;
+.formularioTitulo{
 	@include title;
 	margin-left: 30px;
+}
 
 }
 
@@ -265,6 +299,18 @@ grid-template-areas:
 	.control {
 		width: 250px;
 	}
+}
+.datos{
+	grid-area: cont1;
+	margin-right: 50px;
+	margin-bottom: 120px;
+	P{
+		color:#D35400;
+	}
+	
+}
+.textoDecorado{
+	text-decoration: underline;
 }
 
 .footer {

@@ -8,7 +8,7 @@ body {
 #grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "nav nav nav" "ban ban ban" "nos nos nos" "cont cont1 cont2"	 "foot foot foot";
+      grid-template-areas: "nav nav nav" "ban ban ban" "nos nos nos" "cont cont2 cont1"	 "foot foot foot";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: auto;
@@ -203,6 +203,7 @@ body {
   padding-top: 10px;
   margin-top: 30px;
   color: #D35400;
+  margin-left: 30px;
 }
 
 .historia .nosotros {
@@ -215,6 +216,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-left: 30px;
 }
 
 .historia .texto {
@@ -223,7 +225,17 @@ body {
   text-align: justify;
   margin: 13px;
   width: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.historia .textoUno {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  text-align: justify;
+  margin: 13px;
+  width: 50%;
+  margin-bottom: 50px;
+  margin-left: 200px;
 }
 
 .historia .foto {
@@ -233,6 +245,17 @@ body {
   margin-top: 15px;
   -webkit-box-shadow: 7px 13px 37px #000;
           box-shadow: 7px 13px 37px #000;
+  margin-bottom: 50px;
+}
+
+.historia .fotoUno {
+  width: 200px;
+  border: solid black;
+  margin-left: 20px;
+  margin-top: 15px;
+  -webkit-box-shadow: 7px 13px 37px #000;
+          box-shadow: 7px 13px 37px #000;
+  margin-bottom: 50px;
 }
 
 .historia .video {
@@ -243,7 +266,16 @@ body {
 }
 
 @media all and (max-width: 576px) {
+  .historia .texto {
+    margin: 13px;
+  }
+  .historia .textoUno {
+    margin: 13px;
+  }
   .historia .foto {
+    margin-left: 50px;
+  }
+  .historia .fotoUno {
     margin-left: 50px;
   }
   .historia .video iframe {
@@ -256,6 +288,10 @@ body {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: cont;
+  width: 100%;
+}
+
+.formulario .formularioTitulo {
   font-family: "Montserrat", sans-serif;
   margin: 10px;
   padding-top: 10px;
@@ -323,6 +359,22 @@ body {
   .control {
     width: 250px;
   }
+}
+
+.datos {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: cont1;
+  margin-right: 50px;
+  margin-bottom: 120px;
+}
+
+.datos P {
+  color: #D35400;
+}
+
+.textoDecorado {
+  text-decoration: underline;
 }
 
 .footer {
@@ -581,6 +633,17 @@ p {
   .puntoVenta {
         grid-template-areas: "tit tit" "desc desc" "map1 ." "map2 ."	 "map3 ." "map4 ." "foot foot";
     margin: auto;
+  }
+  .puntoDos {
+    margin: auto;
+  }
+  .puntoCuatro {
+    margin: auto;
+  }
+  iframe {
+    width: 300px;
+    height: 200px;
+    margin: 12px;
   }
 }
 
