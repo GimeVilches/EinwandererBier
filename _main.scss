@@ -275,7 +275,7 @@ grid-template-areas:
 	font-family:$fuente;
 	width: 600px;
 	padding: 30px;
-	margin: 10px;
+	margin: 20px;
 	border-radius: 4px;
 	color:$colorWhite;
 	box-shadow: 7px 13px 37px #000;
@@ -321,7 +321,7 @@ grid-template-areas:
 }
 .datos{
 	grid-area: cont1;
-	margin-right: 50px;
+	margin-right: 120px;
 	margin-bottom: 120px;
 	P{
 		color:#D35400;
@@ -336,8 +336,17 @@ grid-template-areas:
 	grid-area: foot;
 	background-color: black;
 	width: 100%;
+	
 
 	
+}
+.iconos {
+	padding: 10px;
+	i{
+	font-size: 1.2rem;
+	color: #e74c3c;
+	margin-left: 50%;
+	}
 }
 .wa {
 	.wa__icono{
@@ -357,12 +366,7 @@ grid-template-areas:
 		}
 	}
 
-	.iconos i{
-		font-size: 1.2rem;
-		color: #e74c3c;
-		margin-left: 50%;
-		
-	}
+	
 
 @each $k, $v in $weight {
     .type-#{$k}{

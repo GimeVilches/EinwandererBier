@@ -323,7 +323,7 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 600px;
   padding: 30px;
-  margin: 10px;
+  margin: 20px;
   border-radius: 4px;
   color: #F7F9F9;
   -webkit-box-shadow: 7px 13px 37px #000;
@@ -380,7 +380,7 @@ body {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: cont1;
-  margin-right: 50px;
+  margin-right: 120px;
   margin-bottom: 120px;
 }
 
@@ -401,6 +401,16 @@ body {
   width: 100%;
 }
 
+.iconos {
+  padding: 10px;
+}
+
+.iconos i {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin-left: 50%;
+}
+
 .wa .wa__icono {
   position: fixed;
   bottom: 20px;
@@ -415,12 +425,6 @@ body {
   .wa__icono {
     width: 30px;
   }
-}
-
-.iconos i {
-  font-size: 1.2rem;
-  color: #e74c3c;
-  margin-left: 50%;
 }
 
 .type-light {
