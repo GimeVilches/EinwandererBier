@@ -131,7 +131,8 @@ grid-template-areas:
 	
 @media all and (max-width: 576px) {
 	.imgBanner{
-		width: 100%;		
+		width: 400px;
+		height: 300px;		
 		background-image: url("media/bannermob.jpg");
 		background-position: center;
 		background-size: cover;
@@ -348,6 +349,17 @@ grid-template-areas:
 	margin-left: 50%;
 	}
 }
+@media all and (max-width: 576px) {
+	.iconos {
+		padding: 10px;
+		i{
+		font-size: 0.8rem;
+		color: #e74c3c;
+		margin-left: 50%;
+		}
+	}
+}
+
 .wa {
 	.wa__icono{
 		position: fixed;
