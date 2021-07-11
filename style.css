@@ -26,7 +26,7 @@ body {
 
 @media all and (max-width: 992px) {
   #grilla {
-        grid-template-areas: "nav nav nav" "ban ban ban" "nos nos nos" "cont . ."	 "foot foot foot";
+        grid-template-areas: "nav nav nav" "ban ban ban" "nos nos nos" "cont . ." "cont1 . ." "foot foot foot";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: auto;
@@ -263,6 +263,21 @@ body {
   text-align: center;
   border-bottom: solid black;
   margin-top: 100px;
+}
+
+@media all and (max-width: 992px) {
+  .historia .texto {
+    margin: 13px;
+  }
+  .historia .textoUno {
+    margin: 13px;
+  }
+  .historia .foto {
+    margin-left: 60px;
+  }
+  .historia .fotoUno {
+    margin-left: 60px;
+  }
 }
 
 @media all and (max-width: 576px) {
