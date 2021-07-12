@@ -158,7 +158,7 @@ body {
 
 @media all and (max-width: 576px) {
   .banner .imgBanner {
-    width: 500px;
+    width: auto;
     height: auto;
     background-image: url("media/bannermob.jpg");
     background-position: center;
@@ -234,6 +234,8 @@ body {
   margin: 13px;
   width: 50%;
   margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .historia .textoUno {
@@ -244,6 +246,8 @@ body {
   width: 50%;
   margin-bottom: 50px;
   margin-left: 200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .historia .foto {
@@ -275,10 +279,14 @@ body {
 
 @media all and (max-width: 992px) {
   .historia .texto {
-    margin: 13px;
+    margin: 5px;
+    width: auto;
+    margin-left: 1px;
   }
   .historia .textoUno {
-    margin: 13px;
+    margin: 5px;
+    width: auto;
+    margin-left: 1px;
   }
   .historia .foto {
     margin-left: 60px;
@@ -289,19 +297,23 @@ body {
 }
 
 @media all and (max-width: 576px) {
-  .historia .texto {
+  .historia .nosotros .texto {
     margin: 13px;
+    width: auto;
+    margin-left: 1px;
   }
-  .historia .textoUno {
+  .historia .nosotros .textoUno {
     margin: 13px;
+    width: auto;
+    margin-left: 1px;
   }
-  .historia .foto {
+  .historia .nosotros .foto {
     margin-left: 30px;
   }
-  .historia .fotoUno {
+  .historia .nosotros .fotoUno {
     margin-left: 30px;
   }
-  .historia .video iframe {
+  .historia .nosotros .video iframe {
     max-width: 300px;
     margin: auto;
   }
