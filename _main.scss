@@ -72,6 +72,9 @@ grid-template-areas:
 		}
 	}
 }
+.navbar{
+	padding: 0;
+}
 .navbar-light {
 	.navbar-nav {
 		.nav-link {
@@ -108,7 +111,7 @@ grid-template-areas:
 		background-size: cover;
 		display: flex;
 		flex-direction: column;
-		margin-top: 60px;
+		margin-top:10px;
 		justify-content: start;
 						
 		h1{
@@ -116,7 +119,8 @@ grid-template-areas:
 			text-align: center;	
 			padding-left: 30px;	
 			line-height: 1.8em;
-			margin-top: 135px;
+			margin-top: 250px;
+			
 			
 		}
 		h2{
@@ -130,35 +134,42 @@ grid-template-areas:
 }
 	
 @media all and (max-width: 576px) {
+	.banner{
 	.imgBanner{
-		width: 400px;
-		height: 300px;		
+		width: 500px;
+		height: auto;		
 		background-image: url("media/bannermob.jpg");
 		background-position: center;
 		background-size: cover;
 		display: flex;
-		flex-direction: row;		
+		flex-direction: column;		
 		justify-content: start;
-		margin-top: 0;
+		margin-top: 8px;
+		
 		h1{
 			align-self: start;
 			text-align: center;	
 			padding-left: 30px;	
-			line-height: 1.8em;
-			font-size: 16px;
+			line-height: 1em;
+			font-size: 18px;
+			margin-top: 300px;
 			
 		}
 		h2{
 			align-self: start;
 			text-align: center;	
 			padding-left: 30px;	
-			line-height: 1.8em;
-			font-size: 16px;
+			line-height: 1em;	
 			
+			font-size: 18px;
+			justify-self: start;	
 		}
-	}
-	}
 
+
+		
+	}
+	}
+}
 .historia {
 	grid-area: nos;
 	
@@ -245,10 +256,10 @@ grid-template-areas:
 			margin: 13px;
 		}
 		.foto{
-			margin-left: 50px;
+			margin-left: 30px;
 		}
 		.fotoUno{
-			margin-left: 50px;
+			margin-left: 30px;
 		}
 		.video {
 			iframe {
@@ -293,6 +304,7 @@ grid-template-areas:
 	font-family: $fuente;
 	&:focus {
 		height: 60px;
+		
 	}
 }
 .boton {
