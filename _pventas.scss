@@ -11,32 +11,7 @@
     
      	
 }
-@media all and (max-width: 576px){
-    .puntoVenta{
-    grid-template-areas: 
-        "tit tit"
-        "desc desc"
-        "map1 ."
-        "map2 ."	
-        "map3 ."
-        "map4 ."
-        "foot foot";
-        margin: auto;
-        
-    }
-    .puntoDos{
-        margin: auto;
-    }
-    .puntoCuatro{
-        margin: auto;
-    }
-    iframe{
-        width: 300px;
-        height: 200px;
-        margin: 12px;          
-    }
 
-    }
 
 .titulo {
     @include title;
@@ -82,3 +57,82 @@
     margin: 0;
     padding: 0;
 }
+@media all and (max-width: 992px){
+    .puntoVenta{
+        grid-template-areas: 
+            "tit tit"
+            "desc desc"
+            "map1 ."
+            "map2 ."	
+            "map3 ."
+            "map4 ."
+            "foot foot";
+            margin: auto;
+            padding: auto;
+            
+        }
+        .puntoDos{
+            margin: 30px;
+            padding: auto;
+
+        }
+        .puntoUno{
+            margin: 30px;
+            padding: auto;
+        }
+        .puntoTres{
+            margin: 30px;
+            padding: auto;
+        }
+        .puntoCuatro{
+            margin: 30px;
+            padding: auto;
+        }
+        iframe{
+            width: 400px;
+            height: 300px;
+           
+        }
+    
+        }
+
+
+
+
+@media all and (max-width: 576px){
+    .puntoVenta{
+    grid-template-areas: 
+        "tit tit"
+        "desc desc"
+        "map1 ."
+        "map2 ."	
+        "map3 ."
+        "map4 ."
+        "foot foot";
+        margin: auto;
+        padding: auto;
+        
+    }
+    .puntoDos{
+        margin: 20px;
+        padding: auto;
+    }
+    .puntoUno{
+        margin: 20px;
+        padding: auto;
+    }
+    .puntoTres{
+        margin: 20px;
+        padding: auto;
+    }
+    .puntoCuatro{
+        margin: 20px;
+        padding: auto;
+    }
+    iframe{
+        width: 300px;
+        height: 200px;
+       
+    }
+
+    }
