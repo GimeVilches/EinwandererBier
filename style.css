@@ -590,8 +590,9 @@ body {
   background-image: url("media/fondo.jpg");
   background-size: cover;
   padding-top: 50px;
-  background-size: 1220px;
-  background-position-y: 127px;
+  background-size: 1448px;
+  background-position-y: 111px;
+  background-position-x: -118px;
 }
 
 @media all and (max-width: 576px) {
@@ -684,10 +685,6 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: .3rem;
   outline: 0;
-}
-
-.estiloLista img {
-  width: 450px;
 }
 
 .puntoVenta {
@@ -846,7 +843,7 @@ p {
 }
 
 @media all and (max-width: 576px) {
-  .imagenFiesta img {
+  .evento .imagenFiesta img {
     margin: 10px;
   }
 }

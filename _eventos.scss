@@ -23,8 +23,10 @@
     padding: 0;
 }
 @media all and (max-width: 576px) {
+    .evento{
     .imagenFiesta{ 
         img{
             margin: 10px; }
         }
     }
+}
