@@ -7,7 +7,11 @@
     "desc desc"
     "map1 map2"
 	"map3 map4"
-    "foot foot"
+    "foot foot";
+    align-items: center;
+    justify-content: center;
+    
+
     
      	
 }
@@ -23,6 +27,7 @@
 .puntos{
     color:$colorRed;
     padding-top: 20px;
+   
     
 }
 .descripcion{
@@ -32,24 +37,23 @@
 
 .puntoUno{
     grid-area: map1;
-    margin-left: 50px;
-    
+   margin: 30px;
     
 }
 .puntoDos{
     grid-area: map2;
+    margin: 30px;
     
    
 }
 .puntoTres{
     grid-area: map3;
-    margin-left: 50px;
-    
+    margin: 30px;
     
 }
 .puntoCuatro{
     grid-area: map4;
-   
+   margin: 30px;
     
 }
 .footer{

@@ -111,19 +111,17 @@ body {
   -ms-grid-column-span: 3;
   grid-area: ban;
   -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
       align-self: stretch;
-  -ms-grid-column-align: stretch;
-      justify-self: stretch;
-  color: rgba(248, 234, 204, 0.986);
-}
-
-.banner .imgBanner {
+  justify-self: stretch;
+  color: rgba(250, 232, 194, 0.986);
+  left: 0px;
+  top: 0px;
   width: 100%;
-  min-height: 620px;
+  min-height: 650px;
   background-image: url("media/banner.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,38 +129,58 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.banner .imgBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 600px;
+  margin-top: 140px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .banner .imgBanner h1 {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
-  text-align: center;
-  padding-left: 30px;
   line-height: 1.8em;
-  margin-top: 250px;
+  margin-top: 100px;
 }
 
 .banner .imgBanner h2 {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
-  text-align: center;
-  padding-left: 30px;
   line-height: 1.8em;
 }
 
 @media all and (max-width: 576px) {
-  .banner .imgBanner {
-    width: auto;
+  .banner {
+    left: 0px;
+    top: 0px;
+    width: 100%;
     height: auto;
     background-image: url("media/bannermob.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -170,31 +188,44 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .banner .imgBanner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    margin-top: 8px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    width: auto;
+    margin-top: 100px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .banner .imgBanner h1 {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
-    text-align: center;
-    padding-left: 30px;
     line-height: 1em;
-    font-size: 18px;
-    margin-top: 300px;
+    margin-top: 170px;
+    font-size: 20px;
   }
   .banner .imgBanner h2 {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
-    text-align: center;
-    padding-left: 30px;
     line-height: 1em;
     font-size: 18px;
-    -ms-grid-column-align: start;
-        justify-self: start;
   }
 }
 
@@ -211,7 +242,7 @@ body {
   padding-top: 10px;
   margin-top: 30px;
   color: #D35400;
-  margin-left: 30px;
+  text-align: center;
 }
 
 .historia .nosotros {
@@ -224,14 +255,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .historia .texto {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   text-align: justify;
-  margin: 13px;
   width: 50%;
   margin-bottom: 50px;
   -ms-flex-wrap: wrap;
@@ -242,12 +277,15 @@ body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   text-align: justify;
-  margin: 13px;
   width: 50%;
   margin-bottom: 50px;
   margin-left: 200px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.historia .textoDos {
+  text-align: center;
 }
 
 .historia .foto {
@@ -555,8 +593,6 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding: 15px;
   margin: 2px;
 }
@@ -691,6 +727,12 @@ p {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "tit tit" "desc desc" "map1 map2" "map3 map4" "foot foot";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .titulo {
@@ -724,26 +766,28 @@ p {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: map1;
-  margin-left: 50px;
+  margin: 30px;
 }
 
 .puntoDos {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: map2;
+  margin: 30px;
 }
 
 .puntoTres {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: map3;
-  margin-left: 50px;
+  margin: 30px;
 }
 
 .puntoCuatro {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: map4;
+  margin: 30px;
 }
 
 .footer {
@@ -812,13 +856,40 @@ p {
 }
 
 .evento {
-  margin: 20px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.fiesta {
+.fiestaTituloUno {
   margin-top: 130px;
   color: #D35400;
   font-family: "Montserrat", sans-serif;
+}
+
+.fiestaTitulo {
+  margin-top: 20px;
+  color: #D35400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fiesta {
+  text-align: center;
+  margin: 20px;
 }
 
 .imagenFiesta {
@@ -843,7 +914,7 @@ p {
 }
 
 @media all and (max-width: 576px) {
-  .evento .imagenFiesta img {
+  .imagenFiesta img {
     margin: 10px;
   }
 }
