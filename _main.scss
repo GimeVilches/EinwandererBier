@@ -63,7 +63,7 @@ grid-template-areas:
 	}
 	li {
 		display: inline-block;
-		padding: 0 40px;
+		padding: 0 50px;
 		font-size: 14px;
 		&:hover {
 			transform: translateX(12px);
@@ -130,12 +130,13 @@ grid-template-areas:
 			align-self: start;	
 			line-height: 1.8em;
 			margin-top: 100px;
-			
+			text-shadow: 1px 1px 5px rgb(247, 87, 10);
 			
 		}
 		h2{
 			align-self: start;
-			line-height: 1.8em;			
+			line-height: 1.8em;
+			text-shadow: 1px 1px 5px rgb(247, 87, 10);			
 		}
 		
 	}
