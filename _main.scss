@@ -19,7 +19,6 @@ body{
     align-items: end;
     align-content: start;
     height: 100vh;
-   
     margin: auto;
 
 }
@@ -166,6 +165,7 @@ grid-template-areas:
 			width: auto;
 			margin-top: 100px;
 			flex-wrap: wrap;
+			
 					
 			
 		h1{
@@ -267,7 +267,7 @@ grid-template-areas:
 		.textoUno{
 			margin: 5px;
 			width: auto;
-			margin-left: 1px;
+			margin-left: 3px;
 			
 		}
 		.foto{
@@ -284,12 +284,12 @@ grid-template-areas:
 		.texto{
 			margin: 13px;
 			width: auto;
-			margin-left: 1px;
+			margin-left: 3px;
 		}
 		.textoUno{
 			margin: 13px;
 			width: auto;
-			margin-left: 1px;
+			margin-left: 3px;
 		}
 		.foto{
 			margin-left: 30px;

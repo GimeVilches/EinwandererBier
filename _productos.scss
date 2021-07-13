@@ -1,12 +1,9 @@
 @import "_mixins";
 
 .cuerpo{	
-	background-image: url("media/fondo.jpg");
-	background-size: cover;
-	padding-top: 50px;
-	background-size: 1448px;
-	background-position-y: 111px;
-	background-position-x: -118px;	
+	background-color: black;
+	
+	
 			
 }
 @media all and (max-width: 576px) {
@@ -16,8 +13,21 @@
 }
 
 .variedades {
+	background-image: url("media/productos2.jpg");
+	background-size: 60%;
+	
+	background-position: right;
+	margin-right: 0;
+	background-repeat: no-repeat;
+	height: 100%;
+
+	.variedadesTitulo{
 	@include title;
-	padding-top: 80px;
+	padding-top: 100px;}
+
+	
+
+
 	
 	
 }
