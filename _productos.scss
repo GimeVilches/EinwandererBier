@@ -8,37 +8,35 @@
 }
 @media all and (max-width: 576px) {
 	.cuerpo{
+		.variedades{
 		background-image: none;
-	background-color: black;}
+	background-color: black;
+}
+	}
 }
 
 .variedades {
-	background-image: url("media/productos2.jpg");
-	background-size: 60%;
-	
+	background-image: url("media/productos3.jpg");
+	background-size: 70%;	
 	background-position: right;
 	margin-right: 0;
 	background-repeat: no-repeat;
 	height: 100%;
+	margin-top: 140px;
 
 	.variedadesTitulo{
 	@include title;
-	padding-top: 100px;}
-
-	
-
-
-	
-	
+	padding-top: 20px;}
+		
 }
 
 .varios {
 	@include title;
-	margin-top: 5px;
+	
 }
 .chop{
 	@include title;
-	margin-top: 5px;
+	
 }
 
 .imag {
@@ -50,10 +48,14 @@
 .btn {
 	width: 100px;
 	font-size: 30px;
+	&:hover{
+		color: antiquewhite;
+	}	
 	&:focus {
-		box-shadow: none !important;
+		box-shadow: none !important;}
+	
 	}
-}
+
 .modal-header {
 	border-bottom: none !important;
 }
@@ -82,7 +84,7 @@ p{
     pointer-events: auto;
     background-color: rgb(252, 251, 250);
     background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: .3rem;
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: .5rem;
     outline: 0;
 }

@@ -36,6 +36,9 @@
         margin: 30px;
         border: solid black;
         box-shadow: 7px 13px 37px #000;
+        &:hover {
+			transform: scale(1.1);
+		}
     }
 }
 .footer{
@@ -46,7 +49,11 @@
     
     .imagenFiesta{ 
         img{
-            margin: 10px; }
+            margin: 25px;
+            &:hover {
+                transform: none;
+            }
+        }
         }
     
 }

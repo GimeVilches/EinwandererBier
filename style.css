@@ -629,19 +629,20 @@ body {
 }
 
 @media all and (max-width: 576px) {
-  .cuerpo {
+  .cuerpo .variedades {
     background-image: none;
     background-color: black;
   }
 }
 
 .variedades {
-  background-image: url("media/productos2.jpg");
-  background-size: 60%;
+  background-image: url("media/productos3.jpg");
+  background-size: 70%;
   background-position: right;
   margin-right: 0;
   background-repeat: no-repeat;
   height: 100%;
+  margin-top: 140px;
 }
 
 .variedades .variedadesTitulo {
@@ -650,7 +651,7 @@ body {
   padding-top: 10px;
   margin-top: 30px;
   color: #D35400;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 .varios {
@@ -659,7 +660,6 @@ body {
   padding-top: 10px;
   margin-top: 30px;
   color: #D35400;
-  margin-top: 5px;
 }
 
 .chop {
@@ -668,7 +668,6 @@ body {
   padding-top: 10px;
   margin-top: 30px;
   color: #D35400;
-  margin-top: 5px;
 }
 
 .imag img {
@@ -679,6 +678,10 @@ body {
 .btn {
   width: 100px;
   font-size: 30px;
+}
+
+.btn:hover {
+  color: antiquewhite;
 }
 
 .btn:focus {
@@ -724,8 +727,8 @@ p {
   pointer-events: auto;
   background-color: #fcfbfa;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: .3rem;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: .5rem;
   outline: 0;
 }
 
@@ -753,6 +756,7 @@ p {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: tit;
+  text-align: center;
 }
 
 .puntos {
@@ -765,35 +769,35 @@ p {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: desc;
-  margin: 10px;
+  text-align: center;
 }
 
 .puntoUno {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: map1;
-  margin: 30px;
+  margin: 35px;
 }
 
 .puntoDos {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: map2;
-  margin: 30px;
+  margin: 35px;
 }
 
 .puntoTres {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: map3;
-  margin: 30px;
+  margin: 35px;
 }
 
 .puntoCuatro {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: map4;
-  margin: 30px;
+  margin: 35px;
 }
 
 .footer {
@@ -914,6 +918,11 @@ p {
           box-shadow: 7px 13px 37px #000;
 }
 
+.imagenFiesta img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .footer {
   margin: 0;
   padding: 0;
@@ -921,7 +930,11 @@ p {
 
 @media all and (max-width: 576px) {
   .imagenFiesta img {
-    margin: 10px;
+    margin: 25px;
+  }
+  .imagenFiesta img:hover {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
