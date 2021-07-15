@@ -9,7 +9,7 @@ body {
 #grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "nav nav nav" "ban ban ban" "nos nos nos" "cont cont2 cont1"	 "foot foot foot";
+      grid-template-areas: "nav nav" "ban ban" "nos nos" "cont cont1"	 "foot foot";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: auto;
@@ -26,7 +26,7 @@ body {
 
 @media all and (max-width: 992px) {
   #grilla {
-        grid-template-areas: "nav nav nav" "ban ban ban" "nos nos nos" "cont . ." "cont1 . ." "foot foot foot";
+        grid-template-areas: "nav nav" "ban ban" "nos nos" "cont ." "cont1 ." "foot foot";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: auto;
@@ -38,7 +38,7 @@ body {
 #header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: nav;
   width: 100%;
   background: -webkit-gradient(linear, right top, left top, from(#e74c3c), to(#000000));
@@ -108,7 +108,7 @@ body {
 .banner {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: ban;
   -ms-flex-item-align: stretch;
       align-self: stretch;
@@ -117,7 +117,7 @@ body {
   left: 0px;
   top: 0px;
   width: 100%;
-  min-height: 650px;
+  min-height: 700px;
   background-image: url("media/banner.jpg");
   background-position: center;
   background-size: cover;
@@ -163,6 +163,8 @@ body {
   line-height: 1.8em;
   margin-top: 100px;
   text-shadow: 1px 1px 5px #f7570a;
+  display: inline-block;
+  font-size: 50px;
 }
 
 .banner .imgBanner h2 {
@@ -171,6 +173,7 @@ body {
       align-self: start;
   line-height: 1.8em;
   text-shadow: 1px 1px 5px #f7570a;
+  display: inline-block;
 }
 
 @media all and (max-width: 576px) {
@@ -213,6 +216,7 @@ body {
     margin-top: 100px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 300px;
   }
   .banner .imgBanner h1 {
     -ms-flex-item-align: start;
@@ -220,7 +224,7 @@ body {
         align-self: start;
     line-height: 1em;
     margin-top: 170px;
-    font-size: 20px;
+    font-size: 30px;
   }
   .banner .imgBanner h2 {
     -ms-flex-item-align: start;
@@ -234,7 +238,7 @@ body {
 .historia {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: nos;
 }
 
@@ -322,18 +326,18 @@ body {
   .historia .texto {
     margin: 5px;
     width: auto;
-    margin-left: 1px;
+    text-align: center;
   }
   .historia .textoUno {
     margin: 5px;
     width: auto;
-    margin-left: 3px;
+    text-align: center;
   }
   .historia .foto {
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .historia .fotoUno {
-    margin-left: 60px;
+    margin-left: 50px;
   }
 }
 
@@ -341,18 +345,24 @@ body {
   .historia .nosotros .texto {
     margin: 13px;
     width: auto;
-    margin-left: 3px;
+    text-align: center;
   }
   .historia .nosotros .textoUno {
     margin: 13px;
     width: auto;
-    margin-left: 3px;
+    text-align: center;
   }
   .historia .nosotros .foto {
-    margin-left: 30px;
+    margin: 13px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .historia .nosotros .fotoUno {
-    margin-left: 30px;
+    margin: 13px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .historia .nosotros .video iframe {
     max-width: 300px;
@@ -407,7 +417,7 @@ body {
 }
 
 .boton {
-  width: 30%;
+  width: 35%;
   height: 25px;
   border-radius: 4px;
   border: none;
@@ -432,6 +442,7 @@ body {
 @media all and (max-width: 576px) {
   .formContacto {
     width: 300px;
+    margin-left: 40px;
   }
   .control {
     width: 250px;
@@ -440,9 +451,8 @@ body {
 
 .datos {
   -ms-grid-row: 4;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   grid-area: cont1;
-  margin-right: 120px;
   margin-bottom: 120px;
 }
 
@@ -474,11 +484,14 @@ body {
 }
 
 @media all and (max-width: 576px) {
+  .datos {
+    margin-left: 13px;
+  }
   .iconos {
-    padding: 10px;
+    padding: 8px;
   }
   .iconos i {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #e74c3c;
     margin-left: 50%;
   }
@@ -855,6 +868,7 @@ p {
   color: #D35400;
   font-family: "Montserrat", sans-serif;
   text-shadow: 1px 1px 5px #4a4340;
+  margin: 10px;
 }
 
 .fiesta {
@@ -886,6 +900,7 @@ p {
 .footer {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 @media all and (max-width: 576px) {

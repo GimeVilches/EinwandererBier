@@ -8,11 +8,11 @@ body{
 #grilla{
     display: grid;
     grid-template-areas: 
-    "nav nav nav"
-	"ban ban ban"
-    "nos nos nos"
-    "cont cont2 cont1"	
-    "foot foot foot";
+    "nav nav"
+	"ban ban"
+    "nos nos"
+    "cont cont1"	
+    "foot foot";
     grid-template-columns: auto;
     grid-template-rows: auto;
     justify-items: center;
@@ -25,12 +25,12 @@ body{
 @media all and (max-width: 992px){
 #grilla{
 grid-template-areas: 
-    "nav nav nav"
-	"ban ban ban"
-    "nos nos nos"
-    "cont . ."
-	"cont1 . ."
-    "foot foot foot";
+    "nav nav"
+	"ban ban"
+    "nos nos"
+    "cont ."
+	"cont1 ."
+    "foot foot";
     grid-template-columns: auto;
     grid-template-rows: auto;
     justify-items: center;
@@ -103,7 +103,7 @@ grid-template-areas:
 	left: 0px;
 	top: 0px;
 	width: 100%;
-	min-height: 650px;
+	min-height: 700px;
 	background-image: url("media/banner.jpg");
 	background-position: center;
 	background-size: cover;
@@ -131,12 +131,14 @@ grid-template-areas:
 			line-height: 1.8em;
 			margin-top: 100px;
 			text-shadow: 1px 1px 5px rgb(247, 87, 10);
-			
+			display: inline-block;
+			font-size: 50px;
 		}
 		h2{
 			align-self: start;
 			line-height: 1.8em;
-			text-shadow: 1px 1px 5px rgb(247, 87, 10);			
+			text-shadow: 1px 1px 5px rgb(247, 87, 10);	
+			display: inline-block;		
 		}
 		
 	}
@@ -166,6 +168,7 @@ grid-template-areas:
 			width: auto;
 			margin-top: 100px;
 			flex-wrap: wrap;
+			width: 300px;
 			
 					
 			
@@ -173,7 +176,7 @@ grid-template-areas:
 			align-self: start;
 			line-height: 1em;
 			margin-top: 170px;
-			font-size: 20px;
+			font-size: 30px;
 			
 		}
 		h2{
@@ -261,23 +264,25 @@ grid-template-areas:
 		.texto{
 			margin: 5px;
 			width: auto;
-			margin-left: 1px;
+			text-align: center;
+			
 		
 		}
 			
 		.textoUno{
 			margin: 5px;
 			width: auto;
-			margin-left: 3px;
+			text-align: center;
+		
 			
 		}
 		.foto{
-			margin-left: 60px;
+			margin-left: 50px;
 		}
 		.fotoUno{
-			margin-left: 60px;
-		}
+			margin-left: 50px;
 	}
+}
 }
 @media all and (max-width: 576px) {
 	.historia {
@@ -285,18 +290,20 @@ grid-template-areas:
 		.texto{
 			margin: 13px;
 			width: auto;
-			margin-left: 3px;
+			text-align: center;
 		}
 		.textoUno{
 			margin: 13px;
 			width: auto;
-			margin-left: 3px;
+			text-align: center;
 		}
 		.foto{
-			margin-left: 30px;
+			margin: 13px;
+			align-self: center;
 		}
 		.fotoUno{
-			margin-left: 30px;
+			margin: 13px;
+			align-self: center;
 		}
 		.video {
 			iframe {
@@ -346,12 +353,13 @@ grid-template-areas:
 	}
 }
 .boton {
-	width: 30%;
+	width: 35%;
 	height: 25px;
 	border-radius: 4px;
 	border: none;
 	text-transform: uppercase;
 	font-size: 16px;
+	
 	&:hover {
 		cursor: pointer;
 		transform: translateY(-3px);
@@ -365,6 +373,7 @@ grid-template-areas:
 @media all and (max-width: 576px) {
 	.formContacto {
 		width: 300px;
+		margin-left: 40px;
 	}
 	.control {
 		width: 250px;
@@ -372,7 +381,6 @@ grid-template-areas:
 }
 .datos{
 	grid-area: cont1;
-	margin-right: 120px;
 	margin-bottom: 120px;
 	P{
 		color:#D35400;
@@ -400,10 +408,14 @@ grid-template-areas:
 	}
 }
 @media all and (max-width: 576px) {
+	.datos{
+		margin-left: 13px;}
+
+
 	.iconos {
-		padding: 10px;
+		padding: 8px;
 		i{
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 		color: #e74c3c;
 		margin-left: 50%;
 		}
