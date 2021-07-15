@@ -629,7 +629,7 @@ body {
   text-shadow: 1px 1px 5px #4a4340;
 }
 
-.chop {
+.choperaTitulo {
   font-family: "Montserrat", sans-serif;
   margin: 10px;
   padding-top: 10px;
@@ -712,6 +712,11 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  justify-items: center;
 }
 
 .titulo {
@@ -782,25 +787,14 @@ p {
 
 @media all and (max-width: 992px) {
   .puntoVenta {
-        grid-template-areas: "tit tit" "desc desc" "map1 ." "map2 ."	 "map3 ." "map4 ." "foot foot";
-    margin: auto;
-    padding: auto;
-  }
-  .puntoDos {
-    margin: 30px;
-    padding: auto;
-  }
-  .puntoUno {
-    margin: 30px;
-    padding: auto;
-  }
-  .puntoTres {
-    margin: 30px;
-    padding: auto;
-  }
-  .puntoCuatro {
-    margin: 30px;
-    padding: auto;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "tit tit" "desc desc" " map1 map1 " " map2 map2"	 " map3 map3 " "map4 map4 " "foot foot";
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    justify-items: center;
   }
   iframe {
     width: 400px;
@@ -810,29 +804,18 @@ p {
 
 @media all and (max-width: 576px) {
   .puntoVenta {
-        grid-template-areas: "tit tit" "desc desc" "map1 ." "map2 ."	 "map3 ." "map4 ." "foot foot";
-    margin: auto;
-    padding: auto;
-  }
-  .puntoDos {
-    margin: 20px;
-    padding: auto;
-  }
-  .puntoUno {
-    margin: 20px;
-    padding: auto;
-  }
-  .puntoTres {
-    margin: 20px;
-    padding: auto;
-  }
-  .puntoCuatro {
-    margin: 20px;
-    padding: auto;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "tit tit" "desc desc" "map1 map1" "map2 map2"	 "map3 map3" "map4 map4" "foot foot";
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    justify-items: center;
   }
   iframe {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
   }
 }
 
