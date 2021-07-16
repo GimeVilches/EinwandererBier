@@ -28,6 +28,7 @@
 .descripcion{
     grid-area: desc;
     text-align: center;
+    margin: 3px;
     
 }
 
@@ -91,8 +92,8 @@
         justify-items: center;        
     }
     .descripcion{
-        font-size: 15px;
-        padding: 4px;
+        font-size: 16px;
+       
     }
     iframe{
         width: 350px;
