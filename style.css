@@ -813,6 +813,9 @@ p {
         grid-template-rows: auto;
     justify-items: center;
   }
+  .descripcion {
+    font-size: 15px;
+  }
   iframe {
     width: 350px;
     height: 250px;
