@@ -3,16 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="Variedades de cervezas artesanales y gin">
-	<meta name="keywords" content="Rubia, Ipa, negra,roja, gin, cerveza artesanal">
+	<meta name="keywords" content="Rubia, Ipa, negra,roja, cerveza artesanal">
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Variedades de cervezas y gin</title>
+	<title>Variedades de cervezas </title>
 </head>
 <body class="cuerpo">
-<div>
- 
+			<!--barra de navegacion-->
 	<div id="header">
 		<nav class="navbar navbar-expand-lg contHeader navbar-light">					
 			<a href="index.html" class="logo"> <img src="media/logo1.png"></a>
@@ -32,8 +31,7 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="eventos.html">Eventos</a>
-					</li>
-					
+					</li>					
 					<li class="nav-item">
 						<a class="nav-link" href="index.html#formularioContacto">Contacto</a>
 					</li>
@@ -41,35 +39,34 @@
 			</div>
 		</nav>
 	</div>
-	
-		<section class="variedades "> 
-			
-			<h1 class="variedadesTitulo type-extraBold text-lg ">Nuestras Cervezas</h1>		
-			
+			<!--Fin barra de navegacion-->
+			<!--Listado de productos con sus descripciones en modal-->
+		<section class="variedades "> 			
+			<h1 class="variedadesTitulo type-extraBold text-lg ">Nuestras Cervezas</h1>					
 			<div>				
 				<button type="button" class="btn btn btn-lg colorRed type-bold text-md" data-toggle="modal" data-target="#cervrubia">
                   Golden
                 </button>			
 				<div class="modal fade container-fluid" id="cervrubia" tabindex="-2" aria-labelledby="cervrubiaLabel" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header ">				        
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body d-block">
-				      	<h2 class="colorOranje">DORADA / FRESCA / SUAVE / FRUTADA</h2>
-						<p>
-							Existen muchas cervezas doradas y refrescantes. Pero frutadas y con destellos finales de lúpulo, sólo hay un estilo, la nuestra. En Einwanderer rescatamos la antigua receta de la cerveza favorita de los bebedores en colonia, Alemania, y la honramos desde el 2004. En nuestra cocina, su legado sigue intacto.
-						</p>
-						<h2 class="colorOranje ">Maridaje ideal</h2>
-						<p>
-							Platos suaves / Fiambres / Ensaladas / Comida Alemana / Pollo / Lemon Pie
-						</p>
-						<div class="imag">
-							<img src="media/golden.jpg" srcset="media/goldenmob.jpg 567w, media/golden.jpg" alt="Imagen de cerveza">
-						</div>
+				  	<div class="modal-dialog">
+				    	<div class="modal-content">
+				      	<div class="modal-header ">				        
+				        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          	<span aria-hidden="true">&times;</span>
+				        	</button>
+				      	</div>
+				      	<div class="modal-body d-block">
+				      		<h2 class="colorOranje">DORADA / FRESCA / SUAVE / FRUTADA</h2>
+							<p>
+								Existen muchas cervezas doradas y refrescantes. Pero frutadas y con destellos finales de lúpulo, sólo hay un estilo, la nuestra. En Einwanderer rescatamos la antigua receta de la cerveza favorita de los bebedores en colonia, Alemania, y la honramos desde el 2004. En nuestra cocina, su legado sigue intacto.
+							</p>
+							<h2 class="colorOranje ">Maridaje ideal</h2>
+							<p>
+								Platos suaves / Fiambres / Ensaladas / Comida Alemana / Pollo / Lemon Pie
+							</p>
+							<div class="imag">
+								<img src="media/golden.jpg" srcset="media/goldenmob.jpg 567w, media/golden.jpg" alt="Imagen de cerveza">
+							</div>
 				      </div>				      
 				    </div>
 				  </div>
@@ -80,30 +77,27 @@
                   Stout
                 </button>				
 				<div class="modal fade container-fluid" id="cervnegra" tabindex="-2" aria-labelledby="exampleModalLabel" 	aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header ">
-				        
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body d-block">
-				      	<h2 class="colorOranje">MARRÓN OSCURA / CHOCOLATE / MALTA TOSTADA</h2>
-						<p>
-							Maltas oscuras. Sabor y aroma penetrante y nocturno. Chocolate, azúcar negro y café. La Stout es la cerveza tributo a la cultura de los primeros pubs en el puerto de Londres. Cheers.
-						</p>
-						<h2 class="colorOranje ">Maridaje ideal</h2>
-						<p>
-							Embutidos / Mariscos / Hamburguesas / Carnes grilladas o ahumadas
-						</p>
-						<div class="imag">
-							<img src="media/stout.jpg" srcset="media/stoutmob.jpg 567w, media/stout.jpg" alt="Imagen de cerveza">
-						</div>
-				       
-				      </div>
-				      
-				    </div>
+				  	<div class="modal-dialog">
+				    	<div class="modal-content">
+				      		<div class="modal-header ">				        
+				        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          		<span aria-hidden="true">&times;</span>
+				        		</button>
+				      		</div>
+				      		<div class="modal-body d-block">
+				      			<h2 class="colorOranje">MARRÓN OSCURA / CHOCOLATE / MALTA TOSTADA</h2>
+								<p>
+									Maltas oscuras. Sabor y aroma penetrante y nocturno. Chocolate, azúcar negro y café. La Stout es la cerveza tributo a la cultura de los primeros pubs en el puerto de Londres. Cheers.
+								</p>
+								<h2 class="colorOranje ">Maridaje ideal</h2>
+								<p>
+									Embutidos / Mariscos / Hamburguesas / Carnes grilladas o ahumadas
+								</p>
+								<div class="imag">
+									<img src="media/stout.jpg" srcset="media/stoutmob.jpg 567w, media/stout.jpg" alt="Imagen de cerveza">
+								</div>				       
+				      		</div>				      
+				    	</div>
 				  </div>
 				</div>				
 			</div>
@@ -112,28 +106,28 @@
                   Brown
                 </button>			
 				<div class="modal fade container-fluid" id="cervroja" tabindex="-2" aria-labelledby="cervrojalabel" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header ">				        
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body d-block">
-				      	<h2 class="colorOranje">RUBÍ / MALTOSA / FÁCIL DE TOMAR</h2>
-						<p>
-							Escocia es tierra de cebada y nuestra cerveza Brown lleva ese paisaje impregnado en su código genético. Rubí intenso. Seis grados de alcohol. Dulce y maltosa. Una fórmula a prueba del paso del tiempo.
-						</p>
-						<h2 class="colorOranje ">Maridaje ideal</h2>
-						<p>
-							Platos agridulces / Ahumados / Papas  / Cerdo / Cordero
-						</p>
-						<div class="imag">
-							<img src="media/brown.jpg" srcset="media/brownmob.jpg 567w, media/brown.jpg" alt="Imagen de cerveza">
-						</div>				       
-				      </div>				      
-				    </div>
-				  </div>
+				  	<div class="modal-dialog">
+				    	<div class="modal-content">
+				      		<div class="modal-header ">				        
+				        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+				      		</div>
+				      		<div class="modal-body d-block">
+								<h2 class="colorOranje">RUBÍ / MALTOSA / FÁCIL DE TOMAR</h2>
+								<p>
+									Escocia es tierra de cebada y nuestra cerveza Brown lleva ese paisaje impregnado en su código genético. Rubí intenso. Seis grados de alcohol. Dulce y maltosa. Una fórmula a prueba del paso del tiempo.
+								</p>
+								<h2 class="colorOranje ">Maridaje ideal</h2>
+								<p>
+									Platos agridulces / Ahumados / Papas  / Cerdo / Cordero
+								</p>
+								<div class="imag">
+									<img src="media/brown.jpg" srcset="media/brownmob.jpg 567w, media/brown.jpg" alt="Imagen de cerveza">
+								</div>				       
+				     	 </div>				      
+				    	</div>
+				  	</div>
 				</div>				
 			</div>
 			<div>				
@@ -141,28 +135,28 @@
                  Trigo
                 </button>				
 				<div class="modal fade container-fluid" id="cervipa" tabindex="-2" aria-labelledby="cervipalabel" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header ">				        
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body d-block">
-				      	<h2 class="colorOranje">ÁMBAR / FRUTADA / TURBIA / LEVE ACIDEZ</h2>
-						<p>
-							Inspirada en las Weizen de trigo turbias del sur de Alemania, tiene un carácter cítrico-frutado y una leve acidez por el uso de pomelo rosado.
-						</p>
-						<h2 class="colorOranje ">Maridaje ideal</h2>
-						<p>
-							Pescados / Frutos de mar / Rabas con limón / Mousses cítricas.
-						</p>
-						<div class="imag">
-							<img src="media/trigo.jpg" srcset="media/trigomob.jpg 567w, media/trigo.jpg" alt="Imagen de cerveza">
-						</div>				       
-				      </div>				      
-				    </div>
-				  </div>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header ">				        
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body d-block">
+								<h2 class="colorOranje">ÁMBAR / FRUTADA / TURBIA / LEVE ACIDEZ</h2>
+								<p>
+									Inspirada en las Weizen de trigo turbias del sur de Alemania, tiene un carácter cítrico-frutado y una leve acidez por el uso de pomelo rosado.
+								</p>
+								<h2 class="colorOranje ">Maridaje ideal</h2>
+								<p>
+									Pescados / Frutos de mar / Rabas con limón / Mousses cítricas.
+								</p>
+								<div class="imag">
+									<img src="media/trigo.jpg" srcset="media/trigomob.jpg 567w, media/trigo.jpg" alt="Imagen de cerveza">
+								</div>				       
+							</div>				      
+						</div>
+					</div>
 				</div>				
 			</div>
 			<div>				
@@ -170,28 +164,28 @@
                   Zarzamoras
                 </button>				
 				<div class="modal fade container-fluid" id="cervzarza" tabindex="-2" aria-labelledby="cervzarzalabel" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header ">				        
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body d-block">
-				      	<h2 class="colorOranje">ÁMBAR / FRUTADA / FRESCA / LEVE ACIDEZ</h2>
-						<p>
-							Una Weizen de trigo a la que se le agregan Zarzamoras recolectadas en la Cumbrecita, tiene un carácter frutado y una leve acidez. Una cerveza unica en su espcie.
-						</p>
-						<h2 class="colorOranje ">Maridaje ideal</h2>
-						<p>
-							Ensaladas / Rolls / Wraps / Carnes Blancas
-						</p>
-						<div class="imag">
-							<img src="media/zarzamora.jpg" srcset="media/zarzamoramob.jpg 567w, media/zarzamora.jpg" alt="Imagen de cerveza">
-						</div>				       
-				      </div>				      
-				    </div>
-				  </div>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header ">				        
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body d-block">
+								<h2 class="colorOranje">ÁMBAR / FRUTADA / FRESCA / LEVE ACIDEZ</h2>
+								<p>
+									Una Weizen de trigo a la que se le agregan Zarzamoras recolectadas en la Cumbrecita, tiene un carácter frutado y una leve acidez. Una cerveza unica en su espcie.
+								</p>
+								<h2 class="colorOranje ">Maridaje ideal</h2>
+								<p>
+									Ensaladas / Rolls / Wraps / Carnes Blancas
+								</p>
+								<div class="imag">
+									<img src="media/zarzamora.jpg" srcset="media/zarzamoramob.jpg 567w, media/zarzamora.jpg" alt="Imagen de cerveza">
+								</div>				       
+							</div>				      
+						</div>
+					</div>
 				</div>				
 			</div>
 			<div>				
@@ -199,80 +193,68 @@
                    Ahumada
                 </button>				
 				<div class="modal fade container-fluid" id="cervahum" tabindex="-2" aria-labelledby="cervahumlabel" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header ">				        
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body d-block">
-				      	<h2 class="colorOranje">NEGRA / FUERTE / TOSTADA / LICOROSA / AHUMADA</h2>
-						<p>
-							Esencia inglesa de exportación. Tímidos, abstenerse. Una cerveza negra, tostada , empapada de alcohol y pasas, amarga y ahumada.
-						</p>
-						<h2 class="colorOranje ">Maridaje ideal</h2>
-						<p>
-							Quesos fuertes / Jamón crudo / Tortas de chocolate / Trufas / Tiramisú
-						</p>
-						<div class="imag">
-							<img src="media/ahumada.jpg" srcset="media/ahumadamob.jpg 567w, media/ahumada.jpg" alt="Imagen de cerveza">
-						</div>				       
-				      </div>				      
-				    </div>
-				  </div>
-				</div>				
-			</div>
-		
-			
-		
-			
-		
-			<div class="chop">
-			<h3 class="type-extraBold choperaTitulo text-lg mtop-5">Barriles y choperas</h3>
-			<button type="button" class="btn btn btn-lg colorRed type-bold text-md" data-toggle="modal" data-target="#choperas">
-                  Choperas
-            </button>				
-				<div class="modal fade container-fluid" id="choperas" tabindex="-2" aria-labelledby="choperasLabel" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header ">
-				        
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body d-block">
-				      	<h2 class="colorOranje">Alquiler de choperas</h2>
-						<p>
-							Alquiler de choperas, consultanos estilos y precio. Barriles de 20 y 30 litros
-						</p>
-						
-						<div class="imag">
-							<img src="media/alquiler.jpg"srcset="media/alquiler-mob.jpg 567w, media/alquiler.jpg" alt="Imagen de cerveza">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header ">				        
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body d-block">
+								<h2 class="colorOranje">NEGRA / FUERTE / TOSTADA / LICOROSA / AHUMADA</h2>
+								<p>
+									Esencia inglesa de exportación. Tímidos, abstenerse. Una cerveza negra, tostada , empapada de alcohol y pasas, amarga y ahumada.
+								</p>
+								<h2 class="colorOranje ">Maridaje ideal</h2>
+								<p>
+									Quesos fuertes / Jamón crudo / Tortas de chocolate / Trufas / Tiramisú
+								</p>
+								<div class="imag">
+									<img src="media/ahumada.jpg" srcset="media/ahumadamob.jpg 567w, media/ahumada.jpg" alt="Imagen de cerveza">
+								</div>				       
+							</div>				      
 						</div>
-				       
-				      </div>
-				      
-				    </div>
-				  </div>
+					</div>
+				</div>				
+			</div>		
+			<div class="chop">
+				<h3 class="type-extraBold choperaTitulo text-lg mtop-5">Barriles y choperas</h3>
+				<button type="button" class="btn btn btn-lg colorRed type-bold text-md" data-toggle="modal" data-target="#choperas">
+                 	 Choperas
+            	</button>				
+				<div class="modal fade container-fluid" id="choperas" tabindex="-2" aria-labelledby="choperasLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header ">								
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body d-block">
+								<h2 class="colorOranje">Alquiler de choperas</h2>
+								<p>
+									Alquiler de choperas, consultanos estilos y precio. Barriles de 20 y 30 litros
+								</p>								
+								<div class="imag">
+									<img src="media/alquiler.jpg" srcset="media/alquiler-mob.jpg 567w, media/alquiler.jpg" alt="Imagen de cerveza">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		
-			
-		</div>
-	</section>
+			</div>			
+		</section>
+				<!--Fin de la seccion productos-->
+				<!--Footer-->
 		<footer class="footer mtop-4">			
 			<div class="d-flex flex-column iconos">
 			  <i class="fab fa-instagram mt-2"> @einwandererbier</i>
 			  <i class="fab fa-facebook-f mt-3 mbottom-2"> Einwanderer Bier</i>
-			  <i class="far fa-envelope"> einwandererbier@gmail.com</i>
-			  
-			</div>
-		  
+			  <i class="far fa-envelope"> einwandererbier@gmail.com</i>			  
+			</div>		  
 		</footer>
-	
-	
+		<!--Fin de footer-->
+		
 	
 	<script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>

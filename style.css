@@ -24,17 +24,6 @@ body {
   margin: auto;
 }
 
-@media all and (max-width: 992px) {
-  #grilla {
-        grid-template-areas: "nav nav" "ban ban" "nos nos" "cont ." "cont1 ." "foot foot";
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    justify-items: center;
-  }
-}
-
 #header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -99,12 +88,6 @@ body {
   color: white !important;
 }
 
-@media all and (max-width: 576px) {
-  #header .logo img {
-    width: 100px;
-  }
-}
-
 .banner {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -114,8 +97,6 @@ body {
       align-self: stretch;
   justify-self: stretch;
   color: rgba(250, 232, 194, 0.986);
-  left: 0px;
-  top: 0px;
   width: 100%;
   min-height: 700px;
   background-image: url("media/banner.jpg");
@@ -174,65 +155,6 @@ body {
   line-height: 1.8em;
   text-shadow: 1px 1px 5px #f7570a;
   display: inline-block;
-}
-
-@media all and (max-width: 576px) {
-  .banner {
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: auto;
-    background-image: url("media/bannermob.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-  }
-  .banner .imgBanner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    width: auto;
-    margin-top: 100px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 300px;
-  }
-  .banner .imgBanner h1 {
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
-    line-height: 1em;
-    margin-top: 170px;
-    font-size: 30px;
-  }
-  .banner .imgBanner h2 {
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
-    line-height: 1em;
-    font-size: 18px;
-  }
 }
 
 .historia {
@@ -322,54 +244,6 @@ body {
   margin-top: 100px;
 }
 
-@media all and (max-width: 992px) {
-  .historia .texto {
-    margin: 5px;
-    width: auto;
-    text-align: center;
-  }
-  .historia .textoUno {
-    margin: 5px;
-    width: auto;
-    text-align: center;
-  }
-  .historia .foto {
-    margin-left: 50px;
-  }
-  .historia .fotoUno {
-    margin-left: 50px;
-  }
-}
-
-@media all and (max-width: 576px) {
-  .historia .nosotros .texto {
-    margin: 13px;
-    width: auto;
-    text-align: center;
-  }
-  .historia .nosotros .textoUno {
-    margin: 13px;
-    width: auto;
-    text-align: center;
-  }
-  .historia .nosotros .foto {
-    margin: 13px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .historia .nosotros .fotoUno {
-    margin: 13px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .historia .nosotros .video iframe {
-    max-width: 300px;
-    margin: auto;
-  }
-}
-
 .formulario {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -439,21 +313,11 @@ body {
           transform: translateY(3px);
 }
 
-@media all and (max-width: 576px) {
-  .formContacto {
-    width: 300px;
-    margin-left: 40px;
-  }
-  .control {
-    width: 250px;
-  }
-}
-
 .datos {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: cont1;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .datos P {
@@ -483,20 +347,6 @@ body {
   margin-left: 50%;
 }
 
-@media all and (max-width: 576px) {
-  .datos {
-    margin-left: 13px;
-  }
-  .iconos {
-    padding: 8px;
-  }
-  .iconos i {
-    font-size: 0.7rem;
-    color: #e74c3c;
-    margin-left: 50%;
-  }
-}
-
 .wa .wa__icono {
   position: fixed;
   bottom: 20px;
@@ -505,12 +355,6 @@ body {
 
 .wa .wa__icono--sm {
   width: 50px;
-}
-
-@media all and (max-width: 576px) {
-  .wa__icono {
-    width: 30px;
-  }
 }
 
 .type-light {
@@ -589,15 +433,158 @@ body {
   margin-bottom: 40px;
 }
 
-.cuerpo {
-  background-color: black;
+@media all and (max-width: 992px) {
+  #grilla {
+        grid-template-areas: "nav nav" "ban ban" "nos nos" "cont cont" "cont1 cont1" "foot foot";
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+  }
+  .historia .texto {
+    margin: 5px;
+    width: auto;
+    text-align: center;
+  }
+  .historia .textoUno {
+    margin: 5px;
+    width: auto;
+    text-align: center;
+  }
+  .historia .foto {
+    margin-left: 50px;
+  }
+  .historia .fotoUno {
+    margin-left: 50px;
+  }
+  .formulario .formularioTitulo {
+    margin-left: 80px;
+  }
+  .formContacto {
+    width: 600px;
+    margin-left: 80px;
+  }
+  .control {
+    width: 540px;
+  }
 }
 
 @media all and (max-width: 576px) {
-  .cuerpo .variedades {
-    background-image: none;
-    background-color: black;
+  #header .logo img {
+    width: 100px;
   }
+  .banner {
+    width: 100%;
+    height: auto;
+    background-image: url("media/bannermob.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .banner .imgBanner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    width: auto;
+    margin-top: 100px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 300px;
+  }
+  .banner .imgBanner h1 {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    line-height: 1em;
+    margin-top: 170px;
+    font-size: 30px;
+  }
+  .banner .imgBanner h2 {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    line-height: 1em;
+    font-size: 18px;
+  }
+  .historia .nosotros .texto {
+    margin: 13px;
+    width: auto;
+    text-align: center;
+  }
+  .historia .nosotros .textoUno {
+    margin: 13px;
+    width: auto;
+    text-align: center;
+  }
+  .historia .nosotros .foto {
+    margin: 13px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .historia .nosotros .fotoUno {
+    margin: 13px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .historia .nosotros .video iframe {
+    max-width: 300px;
+    margin: auto;
+  }
+  .formulario .formularioTitulo {
+    margin-left: 45px;
+  }
+  .formContacto {
+    width: 300px;
+    margin-left: 45px;
+  }
+  .control {
+    width: 250px;
+  }
+  .datos {
+    margin-left: 13px;
+  }
+  .iconos {
+    padding: 8px;
+  }
+  .iconos i {
+    font-size: 0.7rem;
+    color: #e74c3c;
+    margin-left: 50%;
+  }
+  .wa__icono {
+    width: 30px;
+  }
+}
+
+.cuerpo {
+  background-color: black;
 }
 
 .variedades {
@@ -700,6 +687,13 @@ p {
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: .5rem;
   outline: 0;
+}
+
+@media all and (max-width: 576px) {
+  .cuerpo .variedades {
+    background-image: none;
+    background-color: black;
+  }
 }
 
 .puntoVenta {
@@ -814,7 +808,7 @@ p {
     justify-items: center;
   }
   .descripcion {
-    font-size: 15px;
+    font-size: 13px;
   }
   iframe {
     width: 350px;
@@ -889,9 +883,15 @@ p {
   width: 100%;
 }
 
+@media all and (max-width: 992px) {
+  .imagenFiesta img {
+    margin-left: 40px;
+  }
+}
+
 @media all and (max-width: 576px) {
   .imagenFiesta img {
-    margin: 25px;
+    margin: 35px;
   }
   .imagenFiesta img:hover {
     -webkit-transform: none;

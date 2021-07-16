@@ -1,20 +1,8 @@
 @import "_mixins";
 
 .cuerpo{	
-	background-color: black;
-	
-	
-			
+	background-color: black;					
 }
-@media all and (max-width: 576px) {
-	.cuerpo{
-		.variedades{
-		background-image: none;
-		background-color: black;
-}
-	}
-}
-
 .variedades {
 	background-image: url("media/productos3.jpg");
 	background-size: 70%;	
@@ -23,25 +11,19 @@
 	background-repeat: no-repeat;
 	height: 100%;
 	margin-top: 140px;
-
+	
 	.variedadesTitulo{
 	@include title;
 	padding-top: 20px;
 	
+}		
 }
-
-		
-}
-
 .varios {
-	@include title;
-	
+	@include title;	
 }
 .choperaTitulo{
-	@include title;
-	
+	@include title;	
 }
-
 .imag {
 	img {
 		width: 300px;
@@ -58,7 +40,6 @@
 	}	
 	&:focus {
 		box-shadow: none !important;}
-	
 	}
 
 .modal-header {
@@ -92,4 +73,12 @@ p{
     border: 2px solid rgba(0,0,0,.2);
     border-radius: .5rem;
     outline: 0;
+}
+@media all and (max-width: 576px) {
+	.cuerpo{
+		.variedades{
+		background-image: none;
+		background-color: black;
+}
+	}
 }
