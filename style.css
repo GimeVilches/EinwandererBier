@@ -808,7 +808,8 @@ p {
     justify-items: center;
   }
   .descripcion {
-    font-size: 13px;
+    font-size: 15px;
+    padding: 4px;
   }
   iframe {
     width: 350px;
