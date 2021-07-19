@@ -18,7 +18,8 @@
     color:$colorOranje;
     font-family:$fuente;
     text-shadow:  1px 1px 5px rgb(74, 67, 64); 
-    margin: 10px;       
+    margin: 10px; 
+    text-align: center;      
 }
 .fiesta{
     text-align: center;
@@ -51,6 +52,8 @@
     }
 }
 @media all and (max-width: 576px) {
+    .fiestaTitulo{
+        text-align: center;}
     .imagenFiesta{ 
         img{
             margin: 35px;
