@@ -635,8 +635,8 @@ body {
     margin: 10px;
   }
   .wa .wa__icono {
-    margin-bottom: 40px;
-    width: 30px;
+    margin-bottom: 80px;
+    width: 35px;
   }
 }
 
@@ -808,28 +808,28 @@ p {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: map1;
-  margin: 35px;
+  margin: 35px 50px;
 }
 
 .puntoDos {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: map2;
-  margin: 35px;
+  margin: 35px 50px;
 }
 
 .puntoTres {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: map3;
-  margin: 35px;
+  margin: 35px 50px;
 }
 
 .puntoCuatro {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: map4;
-  margin: 35px;
+  margin: 35px 50px;
 }
 
 .footer {
@@ -873,8 +873,8 @@ p {
     font-size: 16px;
   }
   iframe {
-    width: 350px;
-    height: 250px;
+    width: 330px;
+    height: 230px;
   }
 }
 

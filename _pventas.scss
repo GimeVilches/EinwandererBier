@@ -34,21 +34,21 @@
 
 .puntoUno{
     grid-area: map1;
-   margin: 35px;
+   margin: 35px 50px;
     
 }
 .puntoDos{
     grid-area: map2;
-    margin: 35px;     
+    margin: 35px 50px;     
 }
 .puntoTres{
     grid-area: map3;
-    margin: 35px;
+    margin: 35px 50px;
     
 }
 .puntoCuatro{
     grid-area: map4;
-   margin: 35px;
+   margin: 35px 50px;
     
 }
 .footer{
@@ -96,8 +96,8 @@
        
     }
     iframe{
-        width: 350px;
-        height: 250px;
+        width: 330px;
+        height: 230px;
        
     }
     }
