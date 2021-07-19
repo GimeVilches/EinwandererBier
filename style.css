@@ -491,6 +491,30 @@ body {
   .control {
     width: 540px;
   }
+  .footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: foot;
+    background-color: black;
+    width: 100%;
+  }
+  .footer .textoFooter p {
+    color: #e74c3c;
+    font-size: 14px;
+  }
+  .footer .iconos {
+    display: block;
+  }
+  .footer .iconos i {
+    font-size: 1.6rem;
+    color: #e74c3c;
+    margin: 10px;
+  }
+  .wa .wa__icono {
+    margin-bottom: 40px;
+    width: 40px;
+  }
 }
 
 @media all and (max-width: 576px) {
@@ -600,7 +624,7 @@ body {
   }
   .footer .textoFooter p {
     color: #e74c3c;
-    font-size: 10px;
+    font-size: 14px;
   }
   .footer .iconos {
     display: block;
