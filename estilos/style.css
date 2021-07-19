@@ -99,7 +99,7 @@ body {
   color: rgba(250, 232, 194, 0.986);
   width: 100%;
   min-height: 700px;
-  background-image: url("media/banner.jpg");
+  background-image: url("../media/banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -645,7 +645,7 @@ body {
 }
 
 .variedades {
-  background-image: url("media/productos3.jpg");
+  background-image: url("../media/productos3.jpg");
   background-size: 70%;
   background-position: right;
   margin-right: 0;
